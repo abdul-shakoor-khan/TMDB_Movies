@@ -1,0 +1,449 @@
+/* This is the universal selector, which applies the specified styles to all elements on the page. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* These variables help maintain a consistent design and make it easier to update styles globally. */
+:root {
+  --white-color: #fff;
+  --black-color: #10161d;
+  --green-color: #008000;
+  --gray-color: #666666;
+  --orange-color: #fbc500;
+  --card-bg-color: #080c1c;
+  --card-caption: #020902d5;
+}
+
+/* This rule applies to all elements on the page from html to container*/
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Let's code with passion and make our project shine!" */
+/* ********** Start Hero Section Styling ********** */
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../images/hero-bg.jpg) no-repeat center center/cover;
+}
+
+/* Hero Navbar Styling */
+.hero-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+  background: var(--green-color);
+  padding: 1rem;
+}
+
+.hero-logo {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: .3rem;
+  color: var(--white-color);
+}
+
+.hero-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-search {
+  padding: 1rem;
+  background: var(--black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .6rem;
+  border-radius: .5rem;
+}
+
+.hero-search-icon {
+  font-size: 1.8rem;
+  color: var(--gray-color);
+}
+
+.hero-search input {
+  width: 30rem;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+
+.hero-lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-link {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1.2rem 1.5rem;
+  background: var(--black-color);
+  color: var(--white-color);
+  border-radius: .5rem;
+  margin-left: .5rem;
+  border: transparent;
+}
+
+.active {
+  color: var(--orange-color);
+}
+
+/* Hero Main Content Styling */
+.hm-content {
+  max-width: 70rem;
+  margin: 4rem auto 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hm-heading {
+  font-size: 4.4rem;
+  color: var(--white-color);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.hm-para {
+  font-size: 2rem;
+  color: var(--orange-color);
+  margin-bottom: 2rem;
+}
+
+/* Hero Main EmailBtn Styling */
+.hm-emailBtn {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.hm-email {
+  width: 40rem;
+  padding: 1.5rem;
+  color: var(--gray-color);
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 25rem;
+  background-color: var(--black-color);
+  border: .2rem solid var(--orange-color);
+}
+
+.hm-btn {
+  padding: 1.5rem 2.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 25rem;
+  background-color: var(--orange-color);
+  color: var(--black-color);
+}
+
+/* Shap Divider Styling */
+.custom-shape-divider-top-1732115776 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1732115776 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 39px;
+}
+
+.custom-shape-divider-top-1732115776 .shape-fill {
+  fill: var(--orange-color);
+}
+
+
+/* ********** Start Card Section Styling ********** */
+.card-section {
+  position: relative;
+  margin-top: -15rem;
+  background: var(--card-bg-color);
+}
+
+/* Card Container Styling */
+.card-container {
+  text-align: center;
+  height: auto;
+}
+
+/* Card Content Styling */
+.card-content {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.card-heading {
+  font-size: 3.2rem;
+  color: var(--white-color);
+  margin-bottom: 1rem;
+}
+
+.card-para {
+  font-size: 1.8rem;
+  color: var(--orange-color);
+  line-height: 1.5;
+}
+
+/* Movies Display Styling */
+.card-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border-radius: .8rem;
+  margin: 1rem;
+  padding: .5rem;
+  flex: 1 40rem;
+  text-align: center;
+  transition: 0.2s;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.035);
+}
+
+.card-img .img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+}
+
+/* Movie Caption Styling */
+.card-caption {
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--card-caption);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  opacity: 0;
+  padding-top: 70%;
+  transition: 0.4s;
+}
+
+.card-caption .caption-icon {
+  font-size: 3.2rem;
+  color: var(--white-color);
+  margin-bottom: 1rem;
+}
+
+.card-caption-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white-color);
+  margin-bottom: .5rem;
+}
+
+.card-caption-description {
+  font-size: 1.4rem;
+  color: var(--white-color);
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.card:hover .card-caption {
+  opacity: 1;
+  padding-top: 0;
+}
+
+/* ********** Start Footer Section Styling ********** */
+.footer-section {
+  background: var(--card-bg-color);
+  color: var(--white-color);
+  border-top: .15rem solid var(--gray-color);
+}
+
+/* Footer Container Styling */
+.footer-container {
+  text-align: center;
+}
+
+/* Footer Heading Styling */
+.footer-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer Socials Styling */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.footer-link {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white-color);
+}
+
+.fl-icon {
+  font-size: 1.8rem;
+  color: var(--black-color);
+  transition: all 0.3s ease-in;
+}
+
+.footer-link:hover .fl-icon {
+  color: var(--green-color);
+}
+
+/* This class is in the show-html */
+.tv-show {
+  margin-top: -52rem;
+}
+
+/* ********** Start Details Section Styling ********** */
+/* Details Section is in the movie-details.html and tv-details.html */
+.details-section {
+  background: var(--card-bg-color);
+  color: var(--white-color);
+}
+
+/* Details Back Btn Styling */
+.back-btn {
+  margin: 3rem 2rem;
+}
+
+.back-link {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white-color);
+  border: .2rem solid var(--orange-color);
+  transition: all 0.3s ease-in;
+}
+
+.back-link:hover {
+  color: var(--orange-color);
+}
+
+/* Details Styling */
+.details {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.details-img {
+  height: 450px;
+}
+
+.details-img .img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Details Content Styling */
+.details-content {
+  padding: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.details-content,
+.details-info,
+.para {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.text-primary {
+  color: var(--orange-color);
+  margin-right: .5rem;
+}
+
+.dc-genres {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: .5rem;
+}
+
+.dcg-group {
+  margin-bottom: 3rem;
+}
+
+.dcg-list {
+  font-size: 1.6rem;
+  margin-bottom: .5rem;
+}
+
+.dc-movie-link {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white-color);
+  border: .2rem solid var(--orange-color);
+  transition: all 0.3s ease-in;
+}
+
+.dc-movie-link:hover {
+  color: var(--orange-color);
+}
+
+/* Details Info Styling */
+.details-info {
+  padding: 2rem;
+}
+
+.di-date {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--white-color);
+  border-color: var(--gray-color);
+}
